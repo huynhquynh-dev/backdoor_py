@@ -1,8 +1,10 @@
-#Windows
+# Backdoor
+--------------------------------------------------------------------------------------------------
+## Windows
 1: python -m pip install pyinstaller
 2: pyinstaller.exe reverse_backdoor.py --onefile --noconsole
 
-#Linux
+## Linux
 1: Download python.msi cho windows
 2: Run: wine msiexec /i python-....msi 
 3: cd ./wine/drive_c/Python27
